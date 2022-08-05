@@ -1,0 +1,22 @@
+---
+interface Props {
+  status: "active" | "inactive";
+}
+
+const { status } = Astro.props as Props;
+---
+
+<div class="mb-10 flex justify-center items-center">
+  <p class="mr-3">Current status:</p>
+  <div
+    class={`h-3 w-3 rounded-full inline-block ${
+      status === "active" ? "bg-green-500" : "bg-red-500"
+    } animate-pulse mr-3`}
+  >
+  </div>
+  <p>
+    {status === "active"
+      ? "Actively looking for job"
+      : "Not looking for a job rn"}
+  </p>
+</div>
