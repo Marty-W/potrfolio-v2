@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Landing from "../components/screens/Landing.astro";
 import Projects from "../components/screens/Projects.astro";
+import Blog from "../components/screens/Blog.astro";
+import Contact from "../components/screens/Contact.astro";
 ---
 
 <Layout title="Martin Weber | developer">
@@ -16,6 +18,12 @@ import Projects from "../components/screens/Projects.astro";
     </div>
     <div class="w-screen h-screen snap-center snap-always" id="exp">
       <Projects />
+    </div>
+    <div class="w-screen h-screen snap-center snap-always" id="blog">
+      <Blog />
+    </div>
+    <div class="w-screen h-screen snap-center snap-always" id="contact">
+      <Contact />
     </div>
   </div>
 </Layout>

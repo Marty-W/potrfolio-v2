@@ -27,3 +27,5 @@ export const projects = [
     id: "projects_4",
   },
 ];
+
+export const status = "active";
