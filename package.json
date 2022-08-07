@@ -21,6 +21,7 @@
     "astro": "^1.0.0-rc.7",
     "autoprefixer": "^10.0.2",
     "daisyui": "^2.20.0",
+    "nanostores": "^0.6.0",
     "react-particles": "^2.1.4",
     "svelte-particles": "^2.1.4",
     "tsparticles": "^2.1.4"

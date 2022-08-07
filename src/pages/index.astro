@@ -1,27 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Status from "../components/Status.astro";
 import Navbar from "../components/Navbar.astro";
-// import ParticleBox from "../components/ParticleBox.jsx";
-import ParticleBox from "../components/ParticleBox.svelte";
+import Landing from "../components/screens/Landing.astro";
+import Projects from "../components/screens/Projects.astro";
 ---
 
 <Layout title="Martin Weber | developer">
-  <div class="w-screen h-screen flex flex-col">
-    <Navbar />
+  <div class="snap-mandatory snap-y">
     <div
-      class="flex-1 grid grid-rows-5 grid-cols-2 items-center justify-center text-center"
+      class="w-screen h-screen flex flex-col snap-center snap-always"
+      id="home"
     >
-      <div class="row-start-2 row-span-3 place-self-stretch rounded-3xl ml-6">
-        <ParticleBox client:visible />
-      </div>
-      <div class="col-start-2 row-start-3">
-        <h1 class="text-6xl m-6 ">Martin Weber</h1>
-        <h3 class="text-slate-300 ">
-          front-end (wannabe full-stack) developer
-        </h3>
-      </div>
+      <Navbar />
+      <Landing />
     </div>
-    <Status status="active" />
+    <div class="w-screen h-screen snap-center snap-always" id="exp">
+      <Projects />
+    </div>
   </div>
 </Layout>
