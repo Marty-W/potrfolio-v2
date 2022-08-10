@@ -18,7 +18,8 @@
     "svelte": "^3.46.4"
   },
   "dependencies": {
-    "astro": "^1.0.0-rc.7",
+    "@fontsource/oswald": "^4.5.10",
+    "astro": "^1.0.0",
     "autoprefixer": "^10.0.2",
     "daisyui": "^2.20.0",
     "nanostores": "^0.6.0",
